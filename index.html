@@ -3,6 +3,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evan Levine</title>
+    
+<style>  
+    div {  
+      width: 1000px;   
+      /* border: 2px solid red; */
+    }  
+    div.a {  
+      word-wrap: normal;  
+    }  
+    div.b {  
+      word-wrap: break-word;  
+    }  
+    </style>  
 </head>
         
 <!-- 
@@ -47,10 +60,17 @@
     <hr>
 
     <h3>Documents</h3>
-  <p> 
-    <li><a href="marginalization.pdf">A Practical Guide to Marginalization for Nonlinear
-		    Least Squares on Differentiable Manifolds</a></li>
-  </p>
+    <p><a href="marginalization.pdf">A Practical Guide to Marginalization for Nonlinear
+		    Least Squares on Differentiable Manifolds</a></p>
+
+            <div class="b">
+This report is intended to serve as a practical guide for implementers. It presents a description of 
+marginalization for nonlinear least squares on graphs in the framework of boxplus-manifolds. 
+In software, these abstractions allow users to marginalize out variables with the Ceres solver in a 
+natural way and experiment with algorithmic choices. Users implement boxplus/boxminus operators and Jacobians for each primitive manifold and marginalize in one function call. Square root marginalization and various options for pseudoinverse computation are supported. Code coming soon. </div> 
+
+<p>Usage example: </p>
+        <img src="marg_code_example.jpg" title="" height="150" width="300"><br>
 
     <h3>Research</h3>
 <p> Interests: </p>
